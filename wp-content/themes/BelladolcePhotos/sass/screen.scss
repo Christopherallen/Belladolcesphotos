@@ -1,0 +1,189 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+@import "compass/reset";
+@import "compass/css3";
+@import "mixins.scss";
+@import "variables.scss";
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+/* Global */
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background: #333;
+}
+.row { max-width: 1170px !important; }
+.container {
+	@media(max-width:767px) {
+		padding-left: 0;
+		padding-right:0;
+	}
+}
+p { line-height: 1.4em; }
+h1, h2, h3, h4, h5 {
+	font-family: 'museo_slab500';
+}
+h1 { font-size: 48px; }
+h2 { 
+	font-size: 36px;
+	margin-bottom: 10px;
+}
+h3 { font-size: 28px; }
+h4 { font-size: 20px; }
+.btn-primary {
+	padding: 10px 50px;
+	font-family: 'museo_slab500';
+	font-size: 28px;
+	border: none;
+	background-color: $hoverColor;
+	color: #333;
+	@include border-radius(5px);
+	&:hover {
+		cursor: pointer;
+	}
+}
+a { 
+	@include transition-duration(.5s);
+	&:hover { @include transition-duration(.5s); }
+}
+.overlay .overlay-close {
+	@include transition-duration(.5s);
+	&:hover { @include transition-duration(.5s); }
+}
+.first { padding-left: 0; }
+.removeText { display: none; }
+@media(min-width:768px) {
+	.dropdown-toggle {
+		display: none;
+	}
+	.collapse { display: block !important;}
+}
+@media(max-width:767px) {
+	.collapse {
+		display: none;
+	}
+}
+.contentContainer {
+	min-height: 600px;
+	background: #fff;
+}
+.nav {
+	height: 75px;
+	 font-family: 'museo_slab500';
+	 @include background-opacity(#333, 0.5);
+	 .logo-brand {
+	 	width: 65px;
+	 	height: 65px;
+	 	content: url('../images/bella-logo.png');
+	 	background-repeat: no-repeat;
+	 	position: relative;
+	 	top: 23px;
+	 	margin-top: 5px;
+	 	@media(max-width:767px) {
+	 		margin-left: 15px;
+	 	}
+	 }
+	.site-logo {
+		float: left;
+		a { 
+			@include transition-duration(.5s);
+			font-size: 32px;
+			color: #fff;
+			position: relative;
+			bottom: 23px;
+			@media(max-width:767px) {
+				.logoText { display: none; }
+			}
+		}
+	}
+	.mainNavigation {
+		margin-top: 30px;
+		text-align: right;
+		width: 100%;
+		li { 
+			display: inline;
+			margin-left: 30px;
+			a { 
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 18px;
+				&:hover { color: $hoverColor; }
+			}
+		}
+	}
+	@media(max-width:767px) {
+		.dropdown-toggle {
+			position: absolute;
+			right: 20px;
+			top: 20px;
+			display: block;
+			padding: 10px 15px;
+			color: #fff;
+		}
+		.menu {
+			li { display: block; }
+		}
+	}
+}
+/***** contact ****/
+.contactForm { margin-bottom: 30px; }
+input[type="text"], input[type="email"] {
+ 	height: 50px; 
+ 	margin-top:5px;
+}
+textarea { 
+	height: 100px;
+	margin-top: 5px;
+}
+.formLabel {
+	font-family: 'museo_slab500';
+	font-size: 20px;
+	padding-bottom: 10px;	
+}
+.contactContent {
+	margin-bottom: 30px;
+}
+
+/***** footer ****/
+.social {
+	background-color: #f2f2f2;
+	text-align: center;
+	padding: 15px;
+	border-top: 1px solid #ddd;
+	li { 
+		display: inline;
+		margin-left: 5px;
+	}
+	a { 
+		font-size: 42px;
+		color: #333;
+		&:hover {
+			color: #555;
+		}
+	}
+	.profileImage { margin-top: -65px; }
+	.name { 
+		color: $primaryColor;
+		font-size: 22px;
+		margin-bottom: 10px;
+		margin-top: 5px;
+	 }
+	.bio { 
+		max-width: 750px;
+		padding-bottom: 30px;
+		line-height: 1.5em;
+		margin: 0 auto;
+		@media(max-width:600px) {
+			text-align: left;
+		}
+	}
+}
+.copy {
+	background-color: #333;
+	padding: 20px;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	a { color: #fff;}
+}

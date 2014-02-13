@@ -1,0 +1,374 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Library/Ruby/Gems/1.8/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Global */
+/* line 12, ../sass/screen.scss */
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background: #333;
+}
+
+/* line 16, ../sass/screen.scss */
+.row {
+  max-width: 1170px !important;
+}
+
+@media (max-width: 767px) {
+  /* line 17, ../sass/screen.scss */
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* line 23, ../sass/screen.scss */
+p {
+  line-height: 1.4em;
+}
+
+/* line 24, ../sass/screen.scss */
+h1, h2, h3, h4, h5 {
+  font-family: 'museo_slab500';
+}
+
+/* line 27, ../sass/screen.scss */
+h1 {
+  font-size: 48px;
+}
+
+/* line 28, ../sass/screen.scss */
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* line 32, ../sass/screen.scss */
+h3 {
+  font-size: 28px;
+}
+
+/* line 33, ../sass/screen.scss */
+h4 {
+  font-size: 20px;
+}
+
+/* line 34, ../sass/screen.scss */
+.btn-primary {
+  padding: 10px 50px;
+  font-family: 'museo_slab500';
+  font-size: 28px;
+  border: none;
+  background-color: #94f751;
+  color: #333;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 42, ../sass/screen.scss */
+.btn-primary:hover {
+  cursor: pointer;
+}
+
+/* line 46, ../sass/screen.scss */
+a {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 48, ../sass/screen.scss */
+a:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 50, ../sass/screen.scss */
+.overlay .overlay-close {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+/* line 52, ../sass/screen.scss */
+.overlay .overlay-close:hover {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+/* line 54, ../sass/screen.scss */
+.first {
+  padding-left: 0;
+}
+
+/* line 55, ../sass/screen.scss */
+.removeText {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 57, ../sass/screen.scss */
+  .dropdown-toggle {
+    display: none;
+  }
+
+  /* line 60, ../sass/screen.scss */
+  .collapse {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  /* line 63, ../sass/screen.scss */
+  .collapse {
+    display: none;
+  }
+}
+/* line 67, ../sass/screen.scss */
+.contentContainer {
+  min-height: 600px;
+  background: #fff;
+}
+
+/* line 71, ../sass/screen.scss */
+.nav {
+  height: 75px;
+  font-family: 'museo_slab500';
+  background: #333333;
+  /* The Fallback */
+  background: rgba(51, 51, 51, 0.5);
+}
+/* line 75, ../sass/screen.scss */
+.nav .logo-brand {
+  width: 65px;
+  height: 65px;
+  content: url("../images/bella-logo.png");
+  background-repeat: no-repeat;
+  position: relative;
+  top: 23px;
+  margin-top: 5px;
+}
+@media (max-width: 767px) {
+  /* line 75, ../sass/screen.scss */
+  .nav .logo-brand {
+    margin-left: 15px;
+  }
+}
+/* line 87, ../sass/screen.scss */
+.nav .site-logo {
+  float: left;
+}
+/* line 89, ../sass/screen.scss */
+.nav .site-logo a {
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  font-size: 32px;
+  color: #fff;
+  position: relative;
+  bottom: 23px;
+}
+@media (max-width: 767px) {
+  /* line 96, ../sass/screen.scss */
+  .nav .site-logo a .logoText {
+    display: none;
+  }
+}
+/* line 100, ../sass/screen.scss */
+.nav .mainNavigation {
+  margin-top: 30px;
+  text-align: right;
+  width: 100%;
+}
+/* line 104, ../sass/screen.scss */
+.nav .mainNavigation li {
+  display: inline;
+  margin-left: 30px;
+}
+/* line 107, ../sass/screen.scss */
+.nav .mainNavigation li a {
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 18px;
+}
+/* line 111, ../sass/screen.scss */
+.nav .mainNavigation li a:hover {
+  color: #94f751;
+}
+@media (max-width: 767px) {
+  /* line 116, ../sass/screen.scss */
+  .nav .dropdown-toggle {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+    padding: 10px 15px;
+    color: #fff;
+  }
+  /* line 125, ../sass/screen.scss */
+  .nav .menu li {
+    display: block;
+  }
+}
+
+/***** contact ****/
+/* line 130, ../sass/screen.scss */
+.contactForm {
+  margin-bottom: 30px;
+}
+
+/* line 131, ../sass/screen.scss */
+input[type="text"], input[type="email"] {
+  height: 50px;
+  margin-top: 5px;
+}
+
+/* line 135, ../sass/screen.scss */
+textarea {
+  height: 100px;
+  margin-top: 5px;
+}
+
+/* line 139, ../sass/screen.scss */
+.formLabel {
+  font-family: 'museo_slab500';
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+/* line 144, ../sass/screen.scss */
+.contactContent {
+  margin-bottom: 30px;
+}
+
+/***** footer ****/
+/* line 149, ../sass/screen.scss */
+.social {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #ddd;
+}
+/* line 154, ../sass/screen.scss */
+.social li {
+  display: inline;
+  margin-left: 5px;
+}
+/* line 158, ../sass/screen.scss */
+.social a {
+  font-size: 42px;
+  color: #333;
+}
+/* line 161, ../sass/screen.scss */
+.social a:hover {
+  color: #555;
+}
+/* line 165, ../sass/screen.scss */
+.social .profileImage {
+  margin-top: -65px;
+}
+/* line 166, ../sass/screen.scss */
+.social .name {
+  color: #333333;
+  font-size: 22px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+/* line 172, ../sass/screen.scss */
+.social .bio {
+  max-width: 750px;
+  padding-bottom: 30px;
+  line-height: 1.5em;
+  margin: 0 auto;
+}
+@media (max-width: 600px) {
+  /* line 172, ../sass/screen.scss */
+  .social .bio {
+    text-align: left;
+  }
+}
+
+/* line 182, ../sass/screen.scss */
+.copy {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+/* line 188, ../sass/screen.scss */
+.copy a {
+  color: #fff;
+}
